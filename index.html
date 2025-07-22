@@ -49,6 +49,46 @@
       </nav>
     </aside>
 
+    <main>
+      <div class="container-upload-imagem">
+        <div class="container-imagem">
+          <img src="./img/imagem1.png" alt="" class="main-imagem" />
+        </div>
+        <button>Carregar imagem</button>
+        <div class="container-imagem-nome">
+          <p>Image_projeto.png</p>
+          <img src="./img/close.svg" />
+        </div>
+      </div>
+      <div class="container-descricao">
+        <h2>Novo Projeto</h2>
+        <form>
+          <div>
+            <label for="nome">Nome Do Projeto</label>
+            <input type="text" id="nome" name="nome" />
+          </div>
+          <div>
+            <label for="descricao">Descricao</label>
+            <textarea id="descricao" name="descricao"></textarea>
+          </div>
+          <div>
+            <label for="categoria">Tags</label>
+            <input type="text" id="categoria" name="categoria" />
+          </div>
+          <ul class="lista-tags">
+            <li>
+              <p>Front-end</p>
+              <img src="./img/close.svg" />
+            </li>
+          </ul>
+          <div class="container-botoes">
+            <button class="botao-cancelar">Cancelar</button>
+            <button class="botao-publicar">Publicar</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
     <script src="script.js"></script>
   </body>
 </html>
