@@ -135,4 +135,6 @@ botaoDescartar.addEventListener("click", (evento) => {
 
   imagemPrincipal.src = "./img/placeholder.png";
   nomeDaImagem.textContent = "Nenhuma imagem selecionada";
+
+  listaTags.innerHTML = ""; // Limpa a lista de tags
 });
