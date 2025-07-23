@@ -85,3 +85,16 @@ inputTags.addEventListener("keypress", async (evento) => {
 });
 
 const botaoPublicar = document.getElementById("botao-publicar");
+
+botaoPublicar.addEventListener("click", async (evento) => {
+  evento.preventDefault();
+  const titulo = document.getElementById("nome").value;
+  const descricaoProjeto = document.getElementById("descricao").value;
+  const tagsProjeto = Array.from(listaTags.querySelectorAll("p")).map(
+    (tag) => tag.textContent
+  );
+
+  console.log(titulo);
+  console.log(descricaoProjeto);
+  console.log(tagsProjeto);
+});
